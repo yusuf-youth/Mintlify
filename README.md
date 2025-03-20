@@ -30,7 +30,7 @@ The project has several features:
   </li>
   
   <li>
-    <b>Semantics. </b>The project adheres to semantics, so it uses <code>&lt;articles&gt;</code> for cards, <code>&lt;dialog&gt;</code> for mobile menu, <code>&lt;details&gt;</code> for spoilers, <code>&lt;address&gt;</code> for address information, and so on.
+    <b>Semantics. </b>The project adheres to semantics, so it uses <code>&lt;articles&gt;</code> for cards, <code>&lt;dialog&gt;</code> for mobile menu, <code>&lt;time&gt;</code> for time elements, and so on.
   </li>
   
   <li>
