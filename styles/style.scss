@@ -1,0 +1,34 @@
+@import
+	'normalize',
+	'fonts',
+	'media',
+	'mixins',
+	'variables',
+	'utils',
+	'globals';
+
+@import 'blocks/burger-button', 
+		'blocks/button',
+		'blocks/tabs',
+		'blocks/section',
+		'blocks/label',
+		'blocks/link',
+		'blocks/section-header',
+		'blocks/benefits-card',
+		'blocks/info-box',
+		'blocks/feature',
+		'blocks/testimonials-card',
+		'blocks/image-wrapper',
+		'blocks/socials',
+		'blocks/indicator',
+		'blocks/settings';
+
+@import 'sections/header',
+		'sections/hero',
+		'sections/benefits',
+		'sections/features',
+		'sections/testimonials',
+		'sections/documentation',
+		'sections/footer',
+		'sections/mobile-overlay';
+

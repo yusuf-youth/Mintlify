@@ -1,0 +1,18 @@
+.label {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 6px;
+  margin-bottom: 28px;
+  font-size: 14px;
+  color: var(--color-dark-alt);
+
+  @include mobile {
+    margin-bottom: 15px;
+  }
+
+  svg {
+    @include square(16px);
+
+    color: currentColor;
+  }
+}

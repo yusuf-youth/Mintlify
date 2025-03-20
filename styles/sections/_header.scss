@@ -1,0 +1,53 @@
+.header {
+  height: var(--header-height);
+  color: var(--color-teal);
+  background: var(--background-pastel);
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__logo {
+    @include center-content(true);
+
+    height: 100%;
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 28px;
+
+      @include tablet {
+        column-gap: 22px;
+      }
+    }
+
+    &-link {
+      @include center-content(true);
+      @include hover-effect;
+
+      height: var(--header-height);
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  &__link {
+    @include center-content(true);
+
+    height: var(--header-height);
+  }
+}

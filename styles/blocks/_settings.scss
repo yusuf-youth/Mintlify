@@ -1,0 +1,16 @@
+.settings {
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+  }
+
+  &__button {
+    @include reset-button;
+    @include hover-effect;
+  }
+
+  &__icon {
+    @include square(16px);
+  }
+}

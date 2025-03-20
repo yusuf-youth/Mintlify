@@ -1,0 +1,86 @@
+.button {
+  @include reset-button;
+  @include hover-effect;
+
+  --buttonContentBgColor: var(--color-green);
+  --buttonSvgStrokeColor: var(--color-light);
+
+  padding: 4px;
+  color: var(--color-light);
+  background-color: var(--color-sea-green);
+  border-radius: var(--border-radius-full);
+
+  &--transparent {
+    --buttonContentBgColor: transparent;
+    --buttonSvgStrokeColor: var(--color-teal);
+
+    color: var(--color-teal);
+    background-color: transparent;
+  }
+
+  &--dark {
+    --buttonContentBgColor: var(--color-dark-alt);
+  }
+
+  &--light {
+    --buttonContentBgColor: var(--color-light);
+
+    color: var(--color-dark-alt);
+
+    svg {
+      display: none;
+    }
+  }
+
+  &--grey {
+    --buttonContentBgColor: var(--color-light);
+
+    padding: 0;
+    color: var(--color-dark);
+    border: var(--border-soft-grey);
+  }
+
+  &--small {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    padding: 0;
+    font-size: 14px;
+    color: var(--color-dark-alt);
+    background-color: var(--color-soft-light);
+    border: none;
+    transition-property: box-shadow;
+    transition-duration: var(--transition-duration);
+
+    @include hover {
+      box-shadow: var(--shadow);
+    }
+
+    .button__icon {
+      @include square(20px);
+
+      border-radius: var(--border-radius-full);
+    }
+
+    .button__content {
+      padding: 4px;
+      padding-right: 10px;
+      background-color: transparent;
+    }
+  }
+
+  &__content {
+    @include center-content(true);
+
+    column-gap: 8px;
+    padding: 8px 20px;
+    border-radius: var(--border-radius-full);
+    background-color: var(--buttonContentBgColor);
+
+    svg {
+      @include square(10px);
+
+      stroke: var(--buttonSvgStrokeColor);
+    }
+  }
+}

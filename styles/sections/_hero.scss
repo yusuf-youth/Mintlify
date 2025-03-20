@@ -1,0 +1,76 @@
+.hero {
+  padding-bottom: 96px;
+  background: var(--background-pastel);
+
+  @include mobile {
+    padding-bottom: 60px;
+  }
+
+  &__inner,
+  &__text-content,
+  &__media {
+    @include center-columns;
+  }
+
+  &__text-content {
+    margin-bottom: 32px;
+    text-align: center;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    max-width: 605px;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    max-width: 580px;
+    line-height: 1.5;
+  }
+
+  &__buttons {
+    margin-bottom: 68px;
+
+    @include mobile {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__media {
+    margin-bottom: 96px;
+
+    @include mobile {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__tabs {
+    margin-bottom: 24px;
+  }
+
+  
+
+  &__info {
+    margin-bottom: 66px;
+    color: var(--color-muted-teal);
+
+    @include mobile {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__partners {
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 45px;
+
+      @include mobile {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}

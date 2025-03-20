@@ -1,0 +1,21 @@
+.section {
+  padding-block: var(--section-padding-y);
+  overflow-x: hidden;
+
+  &--cyan-light {
+    background-color: var(--color-cyan-light);
+  }
+
+  &__header {
+    margin-bottom: 64px;
+    text-align: center;
+
+    @include mobile {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+}

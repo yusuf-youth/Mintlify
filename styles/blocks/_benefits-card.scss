@@ -1,0 +1,109 @@
+.benefits-card {
+  @include center-content;
+
+  --benefitsCardOverlayOffsetX: 38px;
+
+  position: relative;
+  max-width: max-content;
+  width: 100%;
+  padding: 28px var(--benefitsCardOverlayOffsetX) 0;
+  background-color: var(--color-silver);
+  border-radius: var(--border-radius-m);
+
+  @include tablet {
+    --benefitsCardOverlayOffsetX: 20px;
+  }
+
+  @include mobile {
+    --benefitsCardOverlayOffsetX: 15px;
+
+    padding-top: var(--benefitsCardOverlayOffsetX);
+    background-color: transparent;
+    border-radius: var(--border-radius-m) !important;
+  }
+
+  &--top-left-border-radius {
+    border-top-left-radius: var(--border-radius-xl);
+  }
+
+  &--top-right-border-radius {
+    border-top-right-radius: var(--border-radius-xl);
+  }
+
+  &--bottom-left-border-radius {
+    border-bottom-left-radius: var(--border-radius-xl);
+  }
+
+  &--bottom-right-border-radius {
+    border-bottom-right-radius: var(--border-radius-xl);
+  }
+
+  &--small {
+    @include mobile-above {
+      max-width: 336px;
+      width: 100%;
+    }
+
+    @include mobile {
+      max-width: 430px;
+    }
+
+    .benefits-card__image {
+      width: 285px;
+      height: 285px;
+    }
+
+    .benefits-card__overlay {
+      height: 90px;
+
+      @include mobile {
+        right: 50px;
+        left: 50px;
+      }
+    }
+  }
+
+  &__image {
+    @include mobile {
+      max-width: 430px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__overlay {
+    @include center-columns;
+
+    justify-content: end;
+    row-gap: 10px;
+    position: absolute;
+    right: var(--benefitsCardOverlayOffsetX);
+    bottom: 0;
+    left: var(--benefitsCardOverlayOffsetX);
+    height: 120px;
+    padding-bottom: 27px;
+    text-align: center;
+    opacity: 0.8;
+    background-color: var(--color-ghost-light);
+
+    @include tablet {
+      height: fit-content;
+      padding-block: 10px;
+    }
+
+    @include mobile {
+      right: 15px;
+      left: 15px;
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    color: var(--color-dark);
+  }
+
+  &__text {
+    font-size: 12px;
+    color: var(--color-grey-alt);
+  }
+}

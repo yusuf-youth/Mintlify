@@ -1,0 +1,18 @@
+.section-header {
+  @include center-columns;
+
+  margin-bottom: 64px;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  @include tablet {
+    margin-bottom: 50px;
+  }
+
+  @include mobile {
+    margin-bottom: 40px;
+  }
+}
