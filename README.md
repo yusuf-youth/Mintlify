@@ -1,9 +1,9 @@
-<img src="https://www.spinutech.com/Content/cms/images/blog/Benefits-of-a-Digital-Marketing-Agency.jpg" width="500" />
+<img src="https://cdn.prod.website-files.com/5d9bdb47e33988bf5815bfed/65030f7def9a601b790aafa3_AI-Powered-Search-Makes-Your-Knowledge-Base-Smarter.png" width="500" />
 <br />
 
 <i>Hi there! This is a website I built from Figma template for demonstration to potential employers.</i> 
 
-This website is about providing digital marketing agency such as SEO, PPC, social media marketing, and content creation to businesses to grow and succeed online. <a href="https://yusuf-youth.github.io/Mintlify/">Website</a>, <a href="https://www.figma.com/design/dgwOJtGg46DgLClUCZIZZ9/Mintlify?node-id=0-1&p=f&t=xX9DxTeJR2ABmuxF-0" target="_blank">Template</a>. <br />
+This website is a tool for creating modern, interactive developer documentation with AI-powered search and analytics. <a href="https://yusuf-youth.github.io/Mintlify/">Website</a>, <a href="https://www.figma.com/design/dgwOJtGg46DgLClUCZIZZ9/Mintlify?node-id=0-1&p=f&t=xX9DxTeJR2ABmuxF-0" target="_blank">Template</a>. <br />
 
 <h2>Structure</h2>
 The project is structured with following folders: 
