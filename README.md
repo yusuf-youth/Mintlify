@@ -3,7 +3,7 @@
 
 <i>Hi there! This is a website I built from Figma template for demonstration to potential employers.</i> 
 
-This website is about providing digital marketing agency such as SEO, PPC, social media marketing, and content creation to businesses to grow and succeed online. <a href="https://yusuf-youth.github.io/Mintlify/">Website</a>, <a href="https://www.figma.com/design/rYuygYWV3mQRhBIidLdHPT/Positivus?node-id=25-145&p=f&t=EPz27KiT88ynDBX5-0" target="_blank">Template</a>. <br />
+This website is about providing digital marketing agency such as SEO, PPC, social media marketing, and content creation to businesses to grow and succeed online. <a href="https://yusuf-youth.github.io/Mintlify/">Website</a>, <a href="https://www.figma.com/design/dgwOJtGg46DgLClUCZIZZ9/Mintlify?node-id=0-1&p=f&t=xX9DxTeJR2ABmuxF-0" target="_blank">Template</a>. <br />
 
 <h2>Structure</h2>
 The project is structured with following folders: 
