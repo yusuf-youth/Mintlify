@@ -1,0 +1,14 @@
+.link {
+  @include center-content(true);
+  @include hover-effect;
+
+  column-gap: 5px;
+  font-weight: 500;
+  color: var(--color-dark-teal);
+
+  svg {
+    @include square(10px);
+
+    stroke: var(--color-dark-teal);
+  }
+}

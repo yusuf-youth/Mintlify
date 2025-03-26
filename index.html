@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mintlify</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <a class="header__logo hover-effect" href="/">
+          <img
+            class="header__logo-image"
+            src="images/logo.svg"
+            alt="Mintlify"
+            width="120"
+            height="34"
+          />
+        </a>
+
+        <nav class="header__menu hidden-mobile">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">Documentation</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">Customers</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">Pricing</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">Blog</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">Careers</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">Enterprise</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <a class="header__link hover-effect" href="/">Sign In</a>
+          <button
+            class="header__burger-button burger-button visible-mobile"
+            onclick="mobileOverlay.showModal()"
+          >
+            <span class="visually-hidden">Open Menu</span>
+            <span class="burger-button__line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="content">
+      <section class="hero">
+        <h1 class="visually-hidden">Mintlify</h1>
+
+        <div class="hero__inner container-wide">
+          <header class="hero__text-content">
+            <h2 class="hero__title h1">
+              The documentation you want, effortlessly
+            </h2>
+
+            <p class="hero__description">
+              Meet the modern standard for public facing documentation.
+              Beautiful out of the box, easy to maintain, and optimized for user
+              engagement.
+            </p>
+          </header>
+
+          <div class="hero__buttons">
+            <a class="button" href="/">
+              <div class="button__content">
+                Get Started
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                  />
+                </svg>
+              </div>
+            </a>
+
+            <a class="button button--transparent" href="/">
+              <div class="button__content">
+                Documentation
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+
+          <div class="hero__media">
+            <ul class="hero__tabs tabs">
+              <li class="tabs__item">
+                <button class="tabs__button is-current">
+                  <svg
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_27)">
+                      <path
+                        d="M10.9797 7.04828C10.9797 5.66757 12.099 4.54828 13.4797 4.54828H18.688C19.1482 4.54828 19.5213 4.92138 19.5213 5.38162V15.7983C19.5213 16.2585 19.1482 16.6316 18.688 16.6316H13.7105C13.1435 16.6316 12.5877 16.7684 12.1054 17.0665C11.623 17.3646 11.2332 17.7911 10.9797 18.2983M10.9797 7.04828C10.9797 5.66757 9.8604 4.54828 8.47968 4.54828H3.27135C2.81111 4.54828 2.43802 4.92138 2.43802 5.38162V15.7983C2.43802 16.2585 2.81111 16.6316 3.27135 16.6316H8.24885C8.81586 16.6316 9.37167 16.7684 9.854 17.0665C10.3363 17.3646 10.7261 17.7911 10.9797 18.2983M10.9797 7.04828V18.2983"
+                        stroke="#0F4F57"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_27">
+                        <rect
+                          width="20"
+                          height="20"
+                          fill="white"
+                          transform="translate(0.980011 0.590027)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  Guides
+                </button>
+              </li>
+
+              <li class="tabs__item">
+                <button class="tabs__button">
+                  <svg
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.622 4.54828H3.70535C3.24511 4.54828 2.87201 4.92138 2.87201 5.38162V15.7983C2.87201 16.2585 3.24511 16.6316 3.70535 16.6316H11.622M14.1181 4.54828H17.4515C17.9117 4.54828 18.2848 4.92138 18.2848 5.38162V15.7983C18.2848 16.2585 17.9117 16.6316 17.4515 16.6316H14.1181M14.1181 4.54828V2.67328M14.1181 4.54828V16.6316M14.1181 16.6316V18.5066M7.66368 8.50662L9.74701 10.5899L7.66368 12.6733"
+                      stroke="#0F4F57"
+                      stroke-opacity="0.7"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  API Reference
+                </button>
+              </li>
+
+              <li class="tabs__item">
+                <button class="tabs__button">
+                  <svg
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.7053 9.54844V4.88177C10.7053 3.7772 11.6008 2.88177 12.7053 2.88177H14.122C15.2266 2.88177 16.122 3.7772 16.122 4.88177V9.54844M10.7053 6.21511H12.7887M4.03868 9.54844V6.09435C4.03868 5.76337 4.12082 5.43755 4.27774 5.14614L5.29947 3.24864C5.42114 3.02268 5.65705 2.88177 5.91368 2.88177C6.17031 2.88177 6.40622 3.02268 6.52789 3.24864L7.54962 5.14614C7.70654 5.43755 7.78868 5.76337 7.78868 6.09435V9.54844M2.37201 9.54844H17.7887V15.4651C17.7887 16.5697 16.8932 17.4651 15.7887 17.4651H4.37201C3.26744 17.4651 2.37201 16.5697 2.37201 15.4651V9.54844Z"
+                      stroke="#0F4F57"
+                      stroke-opacity="0.7"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  SDK Docs
+                </button>
+              </li>
+
+              <li class="tabs__item">
+                <button class="tabs__button">
+                  <svg
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.4354 12.465H16.1039C17.0244 12.465 17.7706 11.7188 17.7706 10.7983V5.3817C17.7706 4.46122 17.0244 3.71503 16.1039 3.71503H7.56227C6.64179 3.71503 5.8956 4.46122 5.8956 5.3817V7.04836M12.7706 7.04836H4.0206C3.10013 7.04836 2.35394 7.79456 2.35394 8.71503V14.1317C2.35394 15.0521 3.10013 15.7983 4.0206 15.7983H5.06227V17.8817L8.81227 15.7983H12.7706C13.6911 15.7983 14.4373 15.0521 14.4373 14.1317V8.71503C14.4373 7.79456 13.6911 7.04836 12.7706 7.04836Z"
+                      stroke="#0F4F57"
+                      stroke-opacity="0.7"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  Chat
+                </button>
+              </li>
+            </ul>
+
+            <div class="hero__image-wrapper image-wrapper">
+              <img
+                class="hero__image"
+                src="images/hero/tab-image.jpg"
+                alt="Documentation Preview"
+                width="1136"
+                height="713"
+              />
+            </div>
+          </div>
+
+          <p class="hero__info">
+            Powering developer experiences from fast growing startups to
+            enterprises.
+
+            <a class="hero__link link" href="/">
+              Learn more
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                />
+              </svg>
+            </a>
+          </p>
+
+          <div class="hero__partners">
+            <ul class="hero__partners-list">
+              <li class="hero__partners-item">
+                <img
+                  class="hero__partners-image"
+                  src="images/hero/sponsors/teleport.svg"
+                  alt=""
+                  width="105"
+                  height="22"
+                />
+              </li>
+              <li class="hero__partners-item">
+                <img
+                  class="hero__partners-image"
+                  src="images/hero/sponsors/homebot.svg"
+                  alt=""
+                  width="119"
+                  height="28"
+                />
+              </li>
+              <li class="hero__partners-item">
+                <img
+                  class="hero__partners-image"
+                  src="images/hero/sponsors/stedi.svg"
+                  alt=""
+                  width="64"
+                  height="22"
+                />
+              </li>
+              <li class="hero__partners-item">
+                <img
+                  class="hero__partners-image"
+                  src="images/hero/sponsors/flatfile.svg"
+                  alt=""
+                  width="105"
+                  height="24"
+                />
+              </li>
+              <li class="hero__partners-item">
+                <img
+                  class="hero__partners-image"
+                  src="images/hero/sponsors/elevenlabs.svg"
+                  alt=""
+                  width="132"
+                  height="17"
+                />
+              </li>
+              <li class="hero__partners-item">
+                <img
+                  class="hero__partners-image"
+                  src="images/hero/sponsors/mindsdb.svg"
+                  alt=""
+                  width="130"
+                  height="20"
+                />
+              </li>
+              <li class="hero__partners-item">
+                <img
+                  class="hero__partners-image"
+                  src="images/hero/sponsors/resend.svg"
+                  alt=""
+                  width="73"
+                  height="18"
+                />
+              </li>
+              <li class="hero__partners-item">
+                <img
+                  class="hero__partners-image"
+                  src="images/hero/sponsors/goody.svg"
+                  alt=""
+                  width="106"
+                  height="28"
+                />
+              </li>
+              <li class="hero__partners-item">
+                <img
+                  class="hero__partners-image"
+                  src="images/hero/sponsors/whop.svg"
+                  alt=""
+                  width="107"
+                  height="22"
+                />
+              </li>
+              <li class="hero__partners-item">
+                <img
+                  class="hero__partners-image"
+                  src="images/hero/sponsors/smartcar.svg"
+                  alt=""
+                  width="100"
+                  height="28"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="benefits">
+        <div class="benefits__inner container">
+          <header class="benefits__header section-header">
+            <span class="benefits__label label">
+              <svg
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1_27)">
+                  <path
+                    d="M10.9797 7.04828C10.9797 5.66757 12.099 4.54828 13.4797 4.54828H18.688C19.1482 4.54828 19.5213 4.92138 19.5213 5.38162V15.7983C19.5213 16.2585 19.1482 16.6316 18.688 16.6316H13.7105C13.1435 16.6316 12.5877 16.7684 12.1054 17.0665C11.623 17.3646 11.2332 17.7911 10.9797 18.2983M10.9797 7.04828C10.9797 5.66757 9.8604 4.54828 8.47968 4.54828H3.27135C2.81111 4.54828 2.43802 4.92138 2.43802 5.38162V15.7983C2.43802 16.2585 2.81111 16.6316 3.27135 16.6316H8.24885C8.81586 16.6316 9.37167 16.7684 9.854 17.0665C10.3363 17.3646 10.7261 17.7911 10.9797 18.2983M10.9797 7.04828V18.2983"
+                    stroke="#0F4F57"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_27">
+                    <rect
+                      width="20"
+                      height="20"
+                      fill="white"
+                      transform="translate(0.980011 0.590027)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              The modern standard
+            </span>
+
+            <h2 class="benefits__title">
+              Beautiful <br />
+              that converts users
+            </h2>
+
+            <p class="benefits__description">
+              A platform you can rely on to reach your audience
+            </p>
+          </header>
+
+          <div class="benefits__body">
+            <ul class="benefits__list benefits__list--2-columns">
+              <li class="benefits__item">
+                <article
+                  class="benefits__card benefits-card benefits-card--top-left-border-radius"
+                >
+                  <img
+                    class="benefits-card__image"
+                    src="images/benefits/1.jpg"
+                    alt="Screenshot of a clean and modern documentation interface with a sidebar and search bar."
+                    width="431"
+                    height="275"
+                  />
+
+                  <div class="benefits-card__overlay">
+                    <h3 class="benefits-card__title">
+                      Gorgeous out of the box
+                    </h3>
+                    <p class="benefits-card__text">
+                      Opinionated when you're lazy, but infinitely flexible when
+                      you need it to be
+                    </p>
+                  </div>
+                </article>
+              </li>
+
+              <li class="benefits__item">
+                <article
+                  class="benefits__card benefits-card benefits-card--top-right-border-radius"
+                >
+                  <img
+                    class="benefits-card__image"
+                    src="images/benefits/2.jpg"
+                    alt="Code snippet and markdown-based documentation editor interface."
+                    width="431"
+                    height="275"
+                  />
+
+                  <div class="benefits-card__overlay">
+                    <h3 class="benefits-card__title">Developer forward</h3>
+                    <p class="benefits-card__text">
+                      Content is powered by markdown and lives alongside your
+                      codebase
+                    </p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+
+            <ul class="benefits__list benefits__list--3-columns">
+              <li class="benefits__item">
+                <article
+                  class="benefits__card benefits-card benefits-card--small benefits-card--bottom-left-border-radius"
+                >
+                  <img
+                    class="benefits-card__image"
+                    src="images/benefits/3.jpg"
+                    alt="Abstract icon representing speed and performance optimization."
+                  />
+
+                  <div class="benefits-card__overlay">
+                    <h3 class="benefits-card__title">Built for performance</h3>
+                    <p class="benefits-card__text">
+                      Meticulously designed and optimized for a great user
+                      experience
+                    </p>
+                  </div>
+                </article>
+              </li>
+
+              <li class="benefits__item">
+                <article
+                  class="benefits__card benefits-card benefits-card--small"
+                >
+                  <img
+                    class="benefits-card__image"
+                    src="images/benefits/4.jpg"
+                    alt=""
+                  />
+
+                  <div class="benefits-card__overlay">
+                    <h3 class="benefits-card__title">
+                      Conversion as a priority
+                    </h3>
+                    <p class="benefits-card__text">
+                      Crafted for more user engagement and conversions
+                    </p>
+                  </div>
+                </article>
+              </li>
+
+              <li class="benefits__item">
+                <article
+                  class="benefits__card benefits-card benefits-card--small benefits-card--bottom-right-border-radius"
+                >
+                  <img
+                    class="benefits-card__image"
+                    src="images/benefits/5.jpg"
+                    alt="Logos of various integration services like Stripe, Ramp, and Resend arranged in a circular pattern."
+                  />
+
+                  <div class="benefits-card__overlay">
+                    <h3 class="benefits-card__title">
+                      Effortlessly maintained
+                    </h3>
+                    <p class="benefits-card__text">
+                      Designed to make updating documentation easy
+                    </p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="features__inner">
+          <header class="features__header section-header">
+            <span class="features__label label">
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.6435 9.82962L7.97686 11.9474V12.9904C7.97686 13.1169 8.11227 13.1973 8.22333 13.1367L10.2092 12.0535C10.477 11.9075 10.6435 11.6269 10.6435 11.3219V9.82962ZM6.97686 11.9131L4.67716 9.61347H3.59989C2.71432 9.61347 2.15162 8.66558 2.57568 7.88814L3.65889 5.90224C3.98016 5.31326 4.59748 4.9468 5.26837 4.9468H7.57819C9.31758 3.09579 11.2599 1.83949 13.7711 1.64097C14.4447 1.58772 15.0026 2.14569 14.9494 2.81925C14.7508 5.33047 13.4945 7.27275 11.6435 9.01213V11.3219C11.6435 11.9928 11.2771 12.6102 10.6881 12.9314L8.7022 14.0146C7.92476 14.4387 6.97686 13.876 6.97686 12.9904V11.9131ZM6.76071 5.9468H5.26837C4.96342 5.9468 4.68282 6.11337 4.53679 6.38109L3.45357 8.36699C3.39299 8.47806 3.47338 8.61347 3.59989 8.61347H4.64286L6.76071 5.9468Z"
+                  fill="#1F2937"
+                />
+                <path
+                  d="M1.64252 13.0764C1.64252 12.0435 2.47991 11.2061 3.51289 11.2061C4.54587 11.2061 5.38326 12.0435 5.38326 13.0764C5.38326 14.1094 4.54587 14.9468 3.51289 14.9468H2.14252C1.86638 14.9468 1.64252 14.723 1.64252 14.4468V13.0764Z"
+                  fill="#1F2937"
+                />
+              </svg>
+
+              Features
+            </span>
+
+            <h2 class="features__title">Documentation leveled up</h2>
+
+            <p class="features__description">
+              Built for the modern business to engage users
+            </p>
+          </header>
+
+          <div class="features__body">
+            <img
+              class="features__background-image"
+              src="images/features/linear-background.svg"
+              alt=""
+              width="1000"
+              height="820"
+            />
+
+            <img
+              class="features__chat-image"
+              src="images/features/chat-image.png"
+              alt="AI chat giving help"
+              width="852"
+              height="403"
+            />
+
+            <div class="features__info-box info-box">
+              <h3 class="info-box__title">AI Chat</h3>
+              <p class="info-box__description">
+                GPT-4 powered chat box for users to get direct answers to their
+                questions
+              </p>
+              <a class="button button--dark" href="/">
+                <div class="button__content">
+                  Get Started
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <ul class="features__list container-wide">
+            <li class="features__item">
+              <article class="features__card feature">
+                <img
+                  class="feature__icon-image"
+                  src="images/features/1.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                />
+                <h4 class="feature__title">Editing</h4>
+                <p class="feature__text">
+                  Editing workflow built into where you work
+                </p>
+              </article>
+            </li>
+            <li class="features__item">
+              <article class="features__card feature">
+                <img
+                  class="feature__icon-image"
+                  src="images/features/2.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                />
+                <h4 class="feature__title">API Playground</h4>
+                <p class="feature__text">
+                  Interactive experience built around your APIs
+                </p>
+              </article>
+            </li>
+            <li class="features__item">
+              <article class="features__card feature">
+                <img
+                  class="feature__icon-image"
+                  src="images/features/3.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                />
+                <h4 class="feature__title">Documentation Analytics</h4>
+                <p class="feature__text">
+                  Understand what users are viewing and where they are
+                  converting
+                </p>
+              </article>
+            </li>
+            <li class="features__item">
+              <article class="features__card feature">
+                <img
+                  class="feature__icon-image"
+                  src="images/features/4.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                />
+                <h4 class="feature__title">Search</h4>
+                <p class="feature__text">
+                  Content is indexed on every update for lightning fast
+                  full-text search
+                </p>
+              </article>
+            </li>
+            <li class="features__item">
+              <article class="features__card feature">
+                <img
+                  class="feature__icon-image"
+                  src="images/features/5.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                />
+                <h4 class="feature__title">Leads Generator</h4>
+                <p class="feature__text">
+                  Identify sales prospects viewing your documentation
+                </p>
+              </article>
+            </li>
+            <li class="features__item">
+              <article class="features__card feature">
+                <img
+                  class="feature__icon-image"
+                  src="images/features/6.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                />
+                <h4 class="feature__title">Preview Deployments</h4>
+                <p class="feature__text">
+                  Review and share your changes before they go live
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="testimonials__inner container">
+          <header class="testimonials__header section-header">
+            <span class="testimonials__label label">
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.51482 14.8494C14.3279 11.5832 15.6607 7.75818 14.6148 5.14393C14.1034 3.86555 13.0316 2.95289 11.7716 2.67128C10.626 2.41522 9.36311 2.68883 8.26987 3.61312C7.17661 2.68883 5.91368 2.41522 4.76806 2.67128C3.50815 2.9529 2.43634 3.86556 1.92491 5.14395C0.879043 7.75819 2.2118 11.5832 8.02498 14.8494C8.17708 14.9349 8.36272 14.9349 8.51482 14.8494Z"
+                  fill="#1F2937"
+                />
+              </svg>
+
+              Wall of love
+            </span>
+            <h2 class="testimonials__title">Built to impress</h2>
+            <p class="testimonials__description">
+              Why leading companies build with Mintlify
+            </p>
+          </header>
+
+          <div class="testimonials__body">
+            <div class="testimonials__grid">
+              <ul class="testimonials__list">
+                <li class="testimonials__item">
+                  <article class="testimonials-card">
+                    <header class="testimonials-card__header">
+                      <img
+                        class="testimonials-card__picture"
+                        src="images/testimonials/1.png"
+                        alt="Profile Picture"
+                      />
+
+                      <div class="testimonials-card__info">
+                        <h3 class="testimonials-card__name">Guillermo Rauch</h3>
+                        <p class="testimonials-card__position">CEO, Vercel</p>
+                      </div>
+                    </header>
+
+                    <div class="testimonials__body">
+                      <blockquote class="testimonials-card__qoute">
+                        The @mintlify team absolutely nailed combining docs
+                        search and AI Q&A in a delightful experience.
+                      </blockquote>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="testimonials__item">
+                  <article class="testimonials-card">
+                    <header class="testimonials-card__header">
+                      <img
+                        class="testimonials-card__picture"
+                        src="images/testimonials/2.png"
+                        alt="Profile Picture"
+                      />
+
+                      <div class="testimonials-card__info">
+                        <h3 class="testimonials-card__name">Vlad Matsiiako</h3>
+                        <p class="testimonials-card__position">
+                          Co-founder, Infisical
+                        </p>
+                      </div>
+                    </header>
+
+                    <div class="testimonials__body">
+                      <blockquote class="testimonials-card__qoute">
+                        Mintlify is absolutely amazing! Their team has been such
+                        a pleasure to work with, and just look at our docs -
+                        they look gorgeous! I definitely think everyone should
+                        try Mintlify out!
+                      </blockquote>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="testimonials__item">
+                  <article class="testimonials-card">
+                    <header class="testimonials-card__header">
+                      <img
+                        class="testimonials-card__picture"
+                        src="images/testimonials/3.png"
+                        alt="Profile Picture"
+                      />
+
+                      <div class="testimonials-card__info">
+                        <h3 class="testimonials-card__name">Maayan Salom</h3>
+                        <p class="testimonials-card__position">
+                          Co-founder, Elementary
+                        </p>
+                      </div>
+                    </header>
+
+                    <div class="testimonials__body">
+                      <blockquote class="testimonials-card__qoute">
+                        Mintlify is amazing for us! Even as a small team we
+                        struggled to keep up with dev and update the docs on
+                        changes. Now the docs are managed as code and are part
+                        of the dev process and PR. As an open source project -
+                        moving the docs to the repo (with zero effort) also
+                        enabled our community to help us maintain and fix
+                        problems as contributors. Our devs and our users love
+                        it.
+                      </blockquote>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+
+              <ul class="testimonials__list">
+                <li class="testimonials__item">
+                  <article class="testimonials-card">
+                    <header class="testimonials-card__header">
+                      <img
+                        class="testimonials-card__picture"
+                        src="images/testimonials/4.png"
+                        alt="Profile Picture"
+                      />
+
+                      <div class="testimonials-card__info">
+                        <h3 class="testimonials-card__name">Zeno Rocha</h3>
+                        <p class="testimonials-card__position">CEO, Resend</p>
+                      </div>
+                    </header>
+
+                    <div class="testimonials__body">
+                      <blockquote class="testimonials-card__qoute">
+                        This is a must-have if you're building any kind of
+                        developer tools. We used other options in the past,
+                        which feels outdated in terms of look-n-feel when
+                        compared to Mintlify. The team helped us set up two
+                        different websites and even migrated all the content for
+                        us. I can't recommend it enough.
+                      </blockquote>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="testimonials__item">
+                  <article class="testimonials-card">
+                    <header class="testimonials-card__header">
+                      <img
+                        class="testimonials-card__picture"
+                        src="images/testimonials/5.png"
+                        alt="Profile Picture"
+                      />
+
+                      <div class="testimonials-card__info">
+                        <h3 class="testimonials-card__name">Adam Carrigan</h3>
+                        <p class="testimonials-card__position">
+                          Co-founder, MindsDB
+                        </p>
+                      </div>
+                    </header>
+
+                    <div class="testimonials__body">
+                      <blockquote class="testimonials-card__qoute">
+                        My team loves Mintlify! Great product and a super
+                        supportive team.
+                      </blockquote>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="testimonials__item">
+                  <article class="testimonials-card">
+                    <header class="testimonials-card__header">
+                      <img
+                        class="testimonials-card__picture"
+                        src="images/testimonials/6.png"
+                        alt="Profile Picture"
+                      />
+
+                      <div class="testimonials-card__info">
+                        <h3 class="testimonials-card__name">Ashley Mulligan</h3>
+                        <p class="testimonials-card__position">
+                          Head of Product Engineering, Flatfile
+                        </p>
+                      </div>
+                    </header>
+
+                    <div class="testimonials__body">
+                      <blockquote class="testimonials-card__qoute">
+                        Mintlify was the only option that checked all the boxes.
+                        To get the look, feel, and features we wanted for our
+                        documentation, it had to be homegrown or Mintlify.
+                      </blockquote>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+
+              <ul class="testimonials__list">
+                <li class="testimonials__item">
+                  <article class="testimonials-card">
+                    <header class="testimonials-card__header">
+                      <img
+                        class="testimonials-card__picture"
+                        src="images/testimonials/7.png"
+                        alt="Profile Picture"
+                      />
+
+                      <div class="testimonials-card__info">
+                        <h3 class="testimonials-card__name">Chun Jiang</h3>
+                        <p class="testimonials-card__position">
+                          CEO, Monterey AI
+                        </p>
+                      </div>
+                    </header>
+
+                    <div class="testimonials__body">
+                      <blockquote class="testimonials-card__qoute">
+                        Absolutely the best. It is freaking easy to set up, and
+                        the team has been great to work with!
+                      </blockquote>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="testimonials__item">
+                  <article class="testimonials-card">
+                    <header class="testimonials-card__header">
+                      <img
+                        class="testimonials-card__picture"
+                        src="images/testimonials/8.png"
+                        alt="Profile Picture"
+                      />
+
+                      <div class="testimonials-card__info">
+                        <h3 class="testimonials-card__name">Charly Poly</h3>
+                        <p class="testimonials-card__position">CEO, Defer</p>
+                      </div>
+                    </header>
+
+                    <div class="testimonials__body">
+                      <blockquote class="testimonials-card__qoute">
+                        Why spend a week coding your own documentation (and
+                        optimizing it for SEO, design, etc.) while Mintlify
+                        brings you the best in class documentation in a few
+                        minutes? Worked on documentation for years, in unicorns
+                        and open source and I'm sold!
+                      </blockquote>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="testimonials__item">
+                  <article class="testimonials-card">
+                    <header class="testimonials-card__header">
+                      <img
+                        class="testimonials-card__picture"
+                        src="images/testimonials/9.png"
+                        alt="Profile Picture"
+                      />
+
+                      <div class="testimonials-card__info">
+                        <h3 class="testimonials-card__name">Mark Bao</h3>
+                        <p class="testimonials-card__position">
+                          Co-founder, Goody
+                        </p>
+                      </div>
+                    </header>
+
+                    <div class="testimonials__body">
+                      <blockquote class="testimonials-card__qoute">
+                        The way Mintlify's docs were displayed just felt really
+                        user-friendly for us, and more importantly, for our
+                        developer customers. I felt like I had finally found a
+                        tool that could give us the Stripe- level documentation
+                        we wanted.
+                      </blockquote>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+
+            <div class="testimonials__overlay">
+              <button class="button button--grey" href="/">
+                <div class="button__content">Show more</div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="documentation">
+        <div class="documentation__inner container-wide">
+          <header class="documentation__header section-header">
+            <h2 class="documentation__title">
+              The documentation you <br />
+              want, available today
+            </h2>
+            <p class="documentation__description">
+              Begin your documentation journey
+            </p>
+
+            <div class="documentation__actions">
+              <a
+                class="documentation__button documentation__button--dark button button--dark"
+                href="/"
+              >
+                <div class="button__content">
+                  Get Started
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                    />
+                  </svg>
+                </div>
+              </a>
+
+              <a
+                class="documentation__button documentation__button--light button button--light"
+                href="/"
+              >
+                <div class="button__content">Contact Sales</div>
+              </a>
+            </div>
+          </header>
+
+          <div class="documentation__body">
+            <div class="documentation__illustration image-wrapper">
+              <img
+                class="documentation__image"
+                src="images/documentation-image.png"
+                alt="Screenshot of the MindsDB documentation homepage"
+                width="1008"
+                height="633"
+              />
+            </div>
+
+            <div class="documentation__credits">
+              <span class="documentation__attribution"
+                >Powered by Mintlify</span
+              >
+
+              <ul class="documentation__credits-list">
+                <li class="documentation__credits-item">
+                  <a
+                    class="documentation__credits-link button button--small"
+                    href="/"
+                  >
+                    <div class="button__content">
+                      <img
+                        class="button__icon"
+                        src="images/documentation/mindsdb.svg"
+                        alt="MindsDB"
+                      />
+
+                      MindsDB
+                    </div>
+                  </a>
+                </li>
+                <li class="documentation__credits-item">
+                  <a
+                    class="documentation__credits-link button button--small"
+                    href="/"
+                  >
+                    <div class="button__content">
+                      <img
+                        class="button__icon"
+                        src="images/documentation/flatfile.svg"
+                        alt="Flatfile"
+                      />
+
+                      Flatfile
+                    </div>
+                  </a>
+                </li>
+                <li class="documentation__credits-item">
+                  <a
+                    class="documentation__credits-link button button--small"
+                    href="/"
+                  >
+                    <div class="button__content">
+                      <img
+                        class="button__icon"
+                        src="images/documentation/dynamic.svg"
+                        alt="Dynamic"
+                      />
+
+                      Dynamic
+                    </div>
+                  </a>
+                </li>
+                <li class="documentation__credits-item">
+                  <a
+                    class="documentation__credits-link button button--small"
+                    href="/"
+                  >
+                    <div class="button__content">
+                      <img
+                        class="button__icon"
+                        src="images/documentation/whop.svg"
+                        alt="Whop"
+                      />
+
+                      Whop
+                    </div>
+                  </a>
+                </li>
+                <li class="documentation__credits-item">
+                  <a
+                    class="documentation__credits-link button button--small"
+                    href="/"
+                  >
+                    <div class="button__content">
+                      <img
+                        class="button__icon"
+                        src="images/documentation/mage.svg"
+                        alt="Mage"
+                      />
+
+                      Mage
+                    </div>
+                  </a>
+                </li>
+                <li class="documentation__credits-item">
+                  <a
+                    class="documentation__credits-link button button--small"
+                    href="/"
+                  >
+                    <div class="button__content">
+                      <img
+                        class="button__icon"
+                        src="images/documentation/plane.svg"
+                        alt="Plane"
+                      />
+
+                      Plane
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <h2 class="visually-hidden">Explore</h2>
+
+      <div class="footer__inner container">
+        <div class="footer__main">
+          <div class="footer__branding">
+            <a class="footer__logo hover-effect" href="/">
+              <img
+                class="footer__logo-image"
+                src="images/logo.svg"
+                alt="Mintlify"
+                width="103"
+                height="24"
+              />
+            </a>
+
+            <div class="footer__socials socials">
+              <ul class="socials__list">
+                <li class="socials__item">
+                  <a class="socials__link" href="/">
+                    <img
+                      class="socials__icon"
+                      src="icons/x-twitter.svg"
+                      alt="X"
+                    />
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="/">
+                    <img
+                      class="socials__icon"
+                      src="icons/github.svg"
+                      alt="GitHub"
+                    />
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="/">
+                    <img
+                      class="socials__icon"
+                      src="icons/plaza.svg"
+                      alt="Plaza"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__column footer__column--first">
+            <h3 class="footer__column-title">Product</h3>
+
+            <ul class="footer__column-list">
+              <li class="footer__column-item">
+                <a class="footer__column-link" href="/"> Documentation </a>
+              </li>
+              <li class="footer__column-item">
+                <a class="footer__column-link" href="/"> Pricing </a>
+              </li>
+              <li class="footer__column-item">
+                <a class="footer__column-link" href="/"> Enterprise </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__column-title">Company</h3>
+
+            <ul class="footer__column-list">
+              <li class="footer__column-item">
+                <a class="footer__column-link" href="/"> Customers </a>
+              </li>
+              <li class="footer__column-item">
+                <a class="footer__column-link" href="/"> Careers </a>
+              </li>
+              <li class="footer__column-item">
+                <a class="footer__column-link" href="/"> Blog </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__extra">
+          <div class="footer__indicator indicator indicator--green">
+            <span class="indicator__status">
+              <span class="indicator__dot"></span>
+            </span>
+
+            All systems normal
+          </div>
+
+          <p class="footer__copyright">
+            © <time datetime="2023">2023</time> Mintlify, Inc.
+          </p>
+
+          <div class="footer__settings settings">
+            <ul class="settings__list">
+              <li class="settings__item">
+                <button class="settings__button">
+                  <img
+                    class="settings__icon"
+                    src="icons/desktop-mode.svg"
+                    alt="Desktop Mode"
+                  />
+                </button>
+              </li>
+              <li class="settings__item">
+                <button class="settings__button">
+                  <img
+                    class="settings__icon"
+                    src="icons/theme-toggle.svg"
+                    alt="Toggle Theme"
+                  />
+                </button>
+              </li>
+              <li class="settings__item">
+                <button class="settings__button">
+                  <img class="settings__icon" src="icons/sync.svg" alt="Sync" />
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+      <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button class="mobile-overlay__close-button" type="submit">
+          <span class="visually-hidden">Close Menu</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-x-lg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+            />
+          </svg>
+        </button>
+      </form>
+
+      <div class="mobile-overlay__body">
+        <ul class="mobile-overlay__list">
+          <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="/">Documentation</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="/">Customers</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="/">Pricing</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="/">Blog</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="/">Careers</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="/">Enterprise</a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
+  </body>
+</html>

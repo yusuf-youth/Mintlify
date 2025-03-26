@@ -1,0 +1,18 @@
+.feature {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  height: 100%;
+  padding: 30px;
+  padding-right: 55px;
+  border: var(--border-grey);
+
+  @include mobile {
+    padding: 25px;
+    padding-right: 45px;
+  }
+
+  &__text {
+    color: var(--color-grey-alt);
+  }
+}

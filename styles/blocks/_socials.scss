@@ -1,0 +1,15 @@
+.socials {
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 33px;
+  }
+
+  &__link {
+    @include hover-effect;
+  }
+
+  &__icon {
+    @include square(16px);
+  }
+}

@@ -1,0 +1,42 @@
+.features {
+  margin-inline: var(--container-padding-x);
+  background-color: var(--color-light-silver);
+  border-radius: var(--border-radius-l);
+
+  &__body {
+    @include center-columns;
+
+    position: relative;
+    overflow: hidden;
+    border-bottom: var(--border-grey);
+  }
+
+  &__background-image {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+  }
+
+  &__chat-image {
+    margin-bottom: 30px;
+  }
+
+  &__info-box {
+    max-width: 310px;
+    margin-bottom: 64px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-inline: 0;
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile-s {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.info-box {
+  @include center-columns;
+
+  row-gap: 22px;
+  text-align: center;
+
+  @include mobile-s {
+    row-gap: 18px;
+  }
+}
