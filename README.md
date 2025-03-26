@@ -28,7 +28,7 @@ The project has several features:
 </li>
 
 <li>
-<b>CSS variables. </b>The project uses css variables throughout styles ensuring maintainability, reusability, and consistency.
+<b>CSS variables. </b>The project uses css variables throughout styles ensuring maintainability, reusability, and consistency of the code.
 </li>
 
 <li>
