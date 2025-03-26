@@ -28,6 +28,10 @@ The project has several features:
 </li>
 
 <li>
+<b>CSS variables. </b>The project uses css variables throughout styles ensuring maintainability, reusability, and consistency.
+</li>
+
+<li>
 <b>Semantics. </b>The project adheres to semantics, so it uses <code>&lt;articles&gt;</code> for cards, <code>&lt;dialog&gt;</code> for mobile menu, <code>&lt;blockqoute&gt;</code> for testimonials, <code>&lt;time&gt;</code> for time elements, and so on.
 </li>
 
