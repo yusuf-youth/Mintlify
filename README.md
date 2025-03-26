@@ -28,7 +28,7 @@ The project has several features:
 </li>
 
 <li>
-<b>Semantics. </b>The project adheres to semantics, so it uses <code><articles></code> for cards, <code><dialog></code> for mobile menu, <code><blockqoute></code> for testimonials, <code><time></code> for time elements, and so on.
+<b>Semantics. </b>The project adheres to semantics, so it uses <code>&lt;articles&gt;</code> for cards, <code>&lt;dialog&gt;</code> for mobile menu, <code>&lt;blockqoute&gt;</code> for testimonials, <code>&lt;time&gt;</code> for time elements, and so on.
 </li>
 
 <li>
