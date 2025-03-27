@@ -24,7 +24,10 @@ The project is structured with following folders:
 The project has several features:
 <ul>
   <li>
-  <b>Global styles. </b>The project has <i>_global.scss</i> for global styles, <i>_normalize.scss</i> for resetting default styles, <i>_mixins.scss</i> and <i>_media.scss</i> for comfortable styling and others.
+    <b>BEM. </b>The project follows the BEM methodology for structuring SCSS, where each component is broken down into <i>blocks</i>, <i>elements</i>, and <i>modifiers</i>. This approach ensures that the code is modular, scalable, and easy to maintain.
+  </li>
+  <li>
+    <b>Global styles. </b>The project has <i>_global.scss</i> for global styles, <i>_normalize.scss</i> for resetting default styles, <i>_mixins.scss</i> and <i>_media.scss</i> for comfortable styling and others.
   </li>
   <li>
     <b>CSS Property Grouping. </b> CSS properties are organized in a consistent and logical order to improve readability, maintainability, and ease of debugging.
@@ -34,9 +37,6 @@ The project has several features:
   </li>
   <li>
     <b>Semantics. </b>The project adheres to semantics, so it uses <code>&lt;articles&gt;</code> for cards, <code>&lt;dialog&gt;</code> for mobile menu, <code>&lt;blockqoute&gt;</code> for testimonials, <code>&lt;time&gt;</code> for time elements, and so on.
-  </li>
-  <li>
-    <b>BEM. </b>The project is structured and built according to BEM methodology, so it's easy to maintain.
   </li>
   <li>
     <b>SCSS. </b>The project is written in the SCSS preprocessor and contains useful features such as mixins for comfortable styling.
