@@ -62,7 +62,7 @@ During development, i used multiple times chatGPT to help with several issues li
     <b>Naming Elements. </b> Whenever i came across an element that i doubted how to name it, chatGPT gave me a list of appropriate names for that element so the code stays organized, scalable, and developer-friendly.
   </li>
   <li>
-    <b>Accessibility. </b> chatGPT helped to generate appropriate alt texts for image for better accessibility.
+    <b>Accessibility. </b> chatGPT helped to generate appropriate <i>alt</i> texts for images for better accessibility.
   </li>
 </ul>
 
